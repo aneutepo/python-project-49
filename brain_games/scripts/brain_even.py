@@ -14,14 +14,16 @@ def main():
                 print("Correct!")
                 number_correct_answers += 1
             else:
-                print(f"Answer '{answer}' is wrong answer ;(. Correct answer was 'yes'.")
+                print(f"Answer '{answer}' is wrong answer ;(. ", end='')
+                print("Correct answer was 'yes'.")
                 break
         else:
             if answer == 'no':
                 print("Correct!")
                 number_correct_answers += 1
             else:
-                print(f"Answer '{answer}' is wrong answer ;(. Correct answer was 'no'.")
+                print(f"Answer '{answer}' is wrong answer ;(. ", end='')
+                print("Correct answer was 'no'.")
                 break
         if number_correct_answers == 3:
             print(f"Congratulations, {username}")
