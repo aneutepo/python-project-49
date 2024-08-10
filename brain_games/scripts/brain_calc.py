@@ -34,7 +34,7 @@ def calc():
             break
 
         if score == 3:
-            print(f"Congratulations, {username}")
+            print(f"Congratulations, {username}!")
             break
 
 
