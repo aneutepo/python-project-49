@@ -5,6 +5,7 @@ from brain_games.cli import welcome_user
 
 def main():
     username = welcome_user()
+    print("Find the greatest common divisor of given numbers.")
     score = 0
     while True:
         first_number = random.randint(1, 100)
@@ -17,6 +18,7 @@ def main():
         else:
             print(f"'{user_answer}' is wrong answer ;(. ", end='')
             print(f"Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {username}!")
             break
 
         if score == 3:
