@@ -15,6 +15,7 @@ def calc():
     massive_of_signs = ['+', '-', '*']
     score = 0
     username = welcome_user()
+    print("What is the result of the expression?")
     while True:
         first_number = random.randint(1, 6)
         second_number = random.randint(1, 6)
