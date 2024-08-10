@@ -1,5 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/aneutepo/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/aneutepo/python-project-49/actions)
+### CodeClimate badge
+[![Maintainability](https://api.codeclimate.com/v1/badges/1c95d53c6537d22d4d37/maintainability)](https://codeclimate.com/github/aneutepo/python-project-49/maintainability)
 ### brain-calc asciinema
 [![asciicast](https://asciinema.org/a/iQqNscIMhGrqBCQnfGiYUrU18.svg)](https://asciinema.org/a/iQqNscIMhGrqBCQnfGiYUrU18)
 ### brain-gcd asciinema
