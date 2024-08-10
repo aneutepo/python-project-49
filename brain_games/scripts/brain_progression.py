@@ -13,6 +13,7 @@ def create_progression(progression_lenght):
     number_of_hide_elem = random.randint(0, len(masive_of_numbers))
     correct_answer = masive_of_numbers[number_of_hide_elem]
     masive_of_numbers[number_of_hide_elem] = '..'
+    masive_of_numbers = ' '.join(map(str, masive_of_numbers))
     return correct_answer, masive_of_numbers
 
 
@@ -22,7 +23,7 @@ def main():
     print("What number is missing in the progression?")
     while True:
         correct_answer, progression = create_progression(10)
-        print(f"Question: {progression}")
+        print("Question:", progression)
         user_answer = input("Your answer: ")
         if user_answer == str(correct_answer):
             print("Correct!")
