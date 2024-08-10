@@ -10,7 +10,7 @@ def create_progression(progression_lenght):
         masive_of_numbers.append(first_element)
         first_element += difference
 
-    number_of_hide_elem = random.randint(0, len(masive_of_numbers)-1)
+    number_of_hide_elem = random.randint(0, len(masive_of_numbers) - 1)
     correct_answer = masive_of_numbers[number_of_hide_elem]
     masive_of_numbers[number_of_hide_elem] = '..'
     masive_of_numbers = ' '.join(map(str, masive_of_numbers))
