@@ -27,7 +27,7 @@ def main():
                 print("Correct answer was 'no'.")
                 break
         if number_correct_answers == 3:
-            print(f"Congratulations, {username}")
+            print(f"Congratulations, {username}!")
             break
 
 
