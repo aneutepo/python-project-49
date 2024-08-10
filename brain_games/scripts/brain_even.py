@@ -17,6 +17,7 @@ def main():
             else:
                 print(f"Answer '{answer}' is wrong answer ;(. ", end='')
                 print("Correct answer was 'yes'.")
+                print(f"Let's try again, {username}!")
                 break
         else:
             if answer == 'no':
@@ -25,6 +26,7 @@ def main():
             else:
                 print(f"Answer '{answer}' is wrong answer ;(. ", end='')
                 print("Correct answer was 'no'.")
+                print(f"Let's try again, {username}!")
                 break
         if number_correct_answers == 3:
             print(f"Congratulations, {username}!")
