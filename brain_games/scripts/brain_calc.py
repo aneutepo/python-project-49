@@ -19,7 +19,7 @@ def calc():
         first_number = random.randint(1, 6)
         second_number = random.randint(1, 6)
         math_sign = random.choice(massive_of_signs)
-        math_question = str(first_number) + math_sign + str(second_number)
+        math_question = f"{str(first_number)} {math_sign} {str(second_number)}"
         print(f"Question: {math_question}")
         user_answer = input("Your answer: ")
         correct_answer = get_answer(first_number, second_number, math_sign)
@@ -29,6 +29,7 @@ def calc():
         else:
             print(f"'{user_answer}' is wrong answer ;(. ", end='')
             print(f"Correct answer was '{correct_answer}'")
+            print(f"Let's try again, {username}!")
             break
 
         if score == 3:
