@@ -12,6 +12,7 @@ def prime_number_check(number):
             return "no"
     return "yes"
 
+
 def create_question():
     question_number = random.randint(1, 10)
     print(f"Question: {question_number}")
@@ -29,6 +30,7 @@ def check_user_answer(correct_answer, user_answer, username):
         print(f"Correct answer was '{correct_answer}'.")
         print(f"Let's try again, {username}!")
         return False
+
 
 def main():
     username = welcome_user()
