@@ -10,7 +10,7 @@ def get_correct_answer(question):
 
 
 def check_user_answer(correct_answer, user_answer, username):
-    if user_answer == correct_answer:
+    if user_answer == str(correct_answer):
         print("Correct!")
         return True
     else:
