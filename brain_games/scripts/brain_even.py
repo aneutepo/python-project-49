@@ -24,14 +24,19 @@ def main():
     score = 0
     username = welcome_user()
     print("Answer \"yes\" if the number is even, otherwise answer \"no\".")
-    while score < 3:
+    while True:
         question_number = random.randint(1, 10000)
         print(f"Question: {question_number}")
         user_answer = input("Your answer: ")
         correct_answer = get_correct_answer(question_number)
         if check_user_answer(correct_answer, user_answer, username):
             score += 1
-    print(f"Congratulations, {username}!")
+        else:
+            break
+
+        if score == 3:
+            print(f"Congratulations, {username}!")
+            break
 
 
 if __name__ == "__main__":
