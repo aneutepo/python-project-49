@@ -1,5 +1,6 @@
 import random
 from brain_games.cli import welcome_user
+from brain_games.check_user_answer import check_user_answer
 
 
 def get_correct_answer(question):
@@ -7,17 +8,6 @@ def get_correct_answer(question):
         return 'yes'
     else:
         return 'no'
-
-
-def check_user_answer(correct_answer, user_answer, username):
-    if user_answer == str(correct_answer):
-        print("Correct!")
-        return True
-    else:
-        print(f"Answer '{user_answer}' is wrong answer ;(. ", end='')
-        print(f"Correct answer was '{correct_answer}'.")
-        print(f"Let's try again, {username}!")
-        return False
 
 
 def main():
