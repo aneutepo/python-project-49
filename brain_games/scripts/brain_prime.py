@@ -22,7 +22,7 @@ def main():
         print(f"Question: {question_number}")
         user_ans = input("Your answer: ")
         correct_answer = prime_number_check(question_number)
-        if user_ans == prime_number_check(question_number):
+        if user_ans == correct_answer:
             score += 1
             print("Correct!")
         else:
