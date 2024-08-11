@@ -9,7 +9,7 @@ def create_question():
     print(f"Question: {first_number} {second_number}")
     user_answer = input("Your answer: ")
     correct_answer = gcd(first_number, second_number)
-    return user_answer,correct_answer
+    return user_answer, correct_answer
 
 
 def check_user_answer(correct_answer, user_answer, username):
@@ -21,7 +21,7 @@ def check_user_answer(correct_answer, user_answer, username):
         print(f"Correct answer was '{correct_answer}'.")
         print(f"Let's try again, {username}!")
         return False
-    
+
 
 def main():
     username = welcome_user()
@@ -29,7 +29,7 @@ def main():
     score = 0
     while True:
         user_answer, correct_answer = create_question()
-        if check_user_answer(correct_answer,user_answer,username):
+        if check_user_answer(correct_answer, user_answer, username):
             score += 1
         else:
             break
