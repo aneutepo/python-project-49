@@ -17,5 +17,5 @@ lint:
 
 push:
 	git add .
-	git commit -m "optimize functions"
+	git commit -m "fixed text titles"
 	git push

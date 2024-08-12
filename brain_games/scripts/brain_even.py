@@ -12,6 +12,7 @@ def get_correct_answer(question):
 
 def main():
     username = get_username()
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     score = 0
     while True:
         question_number = random.randint(1, 10000)
