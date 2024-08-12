@@ -3,7 +3,22 @@ from brain_games.get_username import get_username
 from brain_games.check_user_answer import check_user_answer
 
 
-def create_progression(progression_lenght):
+def game_process():
+    score = 0
+    username = get_username()
+    print("What number is missing in the progression?")
+    while True:
+        user_answer, correct_answer = create_question(10)
+        if check_user_answer(correct_answer, user_answer, username):
+            score += 1
+        else:
+            break
+        if score == 3:
+            print(f"Congratulations, {username}!")
+            break
+
+
+def create_question(progression_lenght):
     first_element = random.randint(1, 10)
     difference = random.randint(1, 5)
     masive_of_numbers = []
@@ -16,23 +31,12 @@ def create_progression(progression_lenght):
     masive_of_numbers[number_of_hide_elem] = '..'
     masive_of_numbers = ' '.join(map(str, masive_of_numbers))
     print("Question:", masive_of_numbers)
-    return correct_answer
+    user_answer = input("Your answer: ")
+    return correct_answer, user_answer
 
 
 def main():
-    score = 0
-    username = get_username()
-    print("What number is missing in the progression?")
-    while True:
-        correct_answer = create_progression(10)
-        user_answer = input("Your answer: ")
-        if check_user_answer(correct_answer, user_answer, username):
-            score += 1
-        else:
-            break
-        if score == 3:
-            print(f"Congratulations, {username}!")
-            break
+    game_process()
 
 
 if __name__ == '__main__':

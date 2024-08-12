@@ -4,6 +4,20 @@ from math import gcd
 from brain_games.check_user_answer import check_user_answer
 
 
+def game_process():
+    score = 0
+    username = get_username()
+    while True:
+        user_answer, correct_answer = create_question()
+        if check_user_answer(correct_answer, user_answer, username):
+            score += 1
+        else:
+            break
+        if score == 3:
+            print(f"Congratulations, {username}!")
+            break
+
+
 def create_question():
     first_number = random.randint(1, 20)
     second_number = random.randint(1, 20)
@@ -14,19 +28,8 @@ def create_question():
 
 
 def main():
-    username = get_username()
     print("Find the greatest common divisor of given numbers.")
-    score = 0
-    while True:
-        user_answer, correct_answer = create_question()
-        if check_user_answer(correct_answer, user_answer, username):
-            score += 1
-        else:
-            break
-
-        if score == 3:
-            print(f"Congratulations, {username}!")
-            break
+    game_process()
 
 
 if __name__ == "__main__":

@@ -3,6 +3,20 @@ from brain_games.get_username import get_username
 from brain_games.check_user_answer import check_user_answer
 
 
+def game_process():
+    score = 0
+    username = get_username()
+    while True:
+        correct_answer, user_answer = create_question()
+        if check_user_answer(correct_answer, user_answer, username):
+            score += 1
+        else:
+            break
+        if score == 3:
+            print(f"Congratulations, {username}!")
+            break
+
+
 def create_question():
     massive_of_signs = ['+', '-', '*']
     first_number = random.randint(1, 6)
@@ -13,7 +27,7 @@ def create_question():
     user_answer = input("Your answer: ")
     correct_answer = get_correct_answer(first_number,
                                         second_number, math_sign)
-    return math_question, correct_answer, user_answer
+    return correct_answer, user_answer
 
 
 def get_correct_answer(first_number, second_number, math_sign):
@@ -26,19 +40,8 @@ def get_correct_answer(first_number, second_number, math_sign):
 
 
 def calc():
-    score = 0
-    username = get_username()
     print("What is the result of the expression?")
-    while True:
-        math_question, correct_answer, user_answer = create_question()
-
-        if check_user_answer(correct_answer, user_answer, username):
-            score += 1
-        else:
-            break
-        if score == 3:
-            print(f"Congratulations, {username}!")
-            break
+    game_process()
 
 
 if __name__ == '__main__':
