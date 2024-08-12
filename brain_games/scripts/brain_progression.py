@@ -8,7 +8,7 @@ def game_process():
     username = get_username()
     print("What number is missing in the progression?")
     while True:
-        user_answer, correct_answer = create_question(10)
+        correct_answer, user_answer = create_question(10)
         if check_user_answer(correct_answer, user_answer, username):
             score += 1
         else:
