@@ -14,7 +14,7 @@ def create_question():
 
 
 def main():
-    username = get_username
+    username = get_username()
     print("Find the greatest common divisor of given numbers.")
     score = 0
     while True:
