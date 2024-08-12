@@ -1,5 +1,5 @@
 import random
-from brain_games.cli import welcome_user
+from brain_games.get_username import get_username
 from brain_games.check_user_answer import check_user_answer
 
 
@@ -23,7 +23,7 @@ def create_question():
 
 
 def main():
-    username = welcome_user()
+    username = get_username()
     score = 0
     print("Answer \"yes\" if given number is prime. Otherwise answer \"no\".")
     while True:

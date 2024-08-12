@@ -1,5 +1,5 @@
 import random
-from brain_games.cli import welcome_user
+from brain_games.get_username import get_username
 from brain_games.check_user_answer import check_user_answer
 
 
@@ -21,7 +21,7 @@ def create_progression(progression_lenght):
 
 def main():
     score = 0
-    username = welcome_user()
+    username = get_username()
     print("What number is missing in the progression?")
     while True:
         correct_answer = create_progression(10)

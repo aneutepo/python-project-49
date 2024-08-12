@@ -1,6 +1,6 @@
 import random
+from brain_games.get_username import get_username
 from math import gcd
-from brain_games.cli import welcome_user
 from brain_games.check_user_answer import check_user_answer
 
 
@@ -14,7 +14,7 @@ def create_question():
 
 
 def main():
-    username = welcome_user()
+    username = get_username
     print("Find the greatest common divisor of given numbers.")
     score = 0
     while True:

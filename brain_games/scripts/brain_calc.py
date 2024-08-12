@@ -1,5 +1,5 @@
 import random
-from brain_games.cli import welcome_user
+from brain_games.get_username import get_username
 from brain_games.check_user_answer import check_user_answer
 
 
@@ -27,7 +27,7 @@ def get_correct_answer(first_number, second_number, math_sign):
 
 def calc():
     score = 0
-    username = welcome_user()
+    username = get_username()
     print("What is the result of the expression?")
     while True:
         math_question, correct_answer, user_answer = create_question()

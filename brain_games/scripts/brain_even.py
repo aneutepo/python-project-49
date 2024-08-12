@@ -1,6 +1,6 @@
 import random
-from brain_games.cli import welcome_user
 from brain_games.check_user_answer import check_user_answer
+from brain_games.get_username import get_username
 
 
 def get_correct_answer(question):
@@ -11,9 +11,8 @@ def get_correct_answer(question):
 
 
 def main():
+    username = get_username()
     score = 0
-    username = welcome_user()
-    print("Answer \"yes\" if the number is even, otherwise answer \"no\".")
     while True:
         question_number = random.randint(1, 10000)
         print(f"Question: {question_number}")
