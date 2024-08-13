@@ -6,6 +6,7 @@ from brain_games.check_user_answer import check_user_answer
 def game_process():
     score = 0
     username = get_username()
+    print("What is the result of the expression?")
     while True:
         correct_answer, user_answer = create_question()
         if check_user_answer(correct_answer, user_answer, username):
@@ -39,10 +40,9 @@ def get_correct_answer(first_number, second_number, math_sign):
         return first_number * second_number
 
 
-def calc():
-    print("What is the result of the expression?")
+def main():
     game_process()
 
 
 if __name__ == '__main__':
-    calc()
+    main()

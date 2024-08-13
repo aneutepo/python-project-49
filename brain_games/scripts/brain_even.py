@@ -6,8 +6,9 @@ from brain_games.get_username import get_username
 def game_process():
     score = 0
     username = get_username()
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     while True:
-        correct_answer, user_answer = create_answer()
+        correct_answer, user_answer = create_question()
         if check_user_answer(correct_answer, user_answer, username):
             score += 1
         else:
@@ -17,7 +18,7 @@ def game_process():
             break
 
 
-def create_answer():
+def create_question():
     question_number = random.randint(1, 10000)
     print(f"Question: {question_number}")
     user_answer = input("Your answer: ")
@@ -33,7 +34,6 @@ def get_correct_answer(question):
 
 
 def main():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
     game_process()
 
 
