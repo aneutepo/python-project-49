@@ -17,5 +17,5 @@ lint:
 
 push:
 	git add .
-	git commit -m "fixed text titles"
+	git commit -m "fixed errors"
 	git push

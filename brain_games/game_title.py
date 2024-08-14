@@ -1,7 +1,7 @@
 GAME_TITLES = {
     'calc': "What is the result of the expression?",
     'even': 'Answer "yes" if the number is even, otherwise answer "no".',
-    'gsd': 'Find the greatest common divisor of given numbers.',
+    'gcd': 'Find the greatest common divisor of given numbers.',
     'prime': 'Answer "yes" if given number is prime. Otherwise answer "no".',
     'progression': "What number is missing in the progression?"
 }
