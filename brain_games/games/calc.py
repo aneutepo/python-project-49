@@ -1,6 +1,8 @@
 import random
 from brain_games.get_username import get_username
 from brain_games.generate_random_number import generate_random_number
+from brain_games.game_title import GAME_TITLES
+from brain_games.write_answer_text import write_answer_text
 
 
 def create_question():
@@ -28,7 +30,7 @@ def get_correct_answer(first_number, second_number, math_sign):
 def game_process():
     score = 0
     username = get_username()
-    print("What is the result of the expression?")
+    print(f"{GAME_TITLES['calc']}")
     while True:
         correct_answer, user_answer = create_question()
         if write_answer_text(correct_answer, user_answer, username):
@@ -38,14 +40,3 @@ def game_process():
         if score == 3:
             print(f"Congratulations, {username}!")
             break
-
-
-def write_answer_text(correct_answer, user_answer, username):
-    if user_answer == str(correct_answer):
-        print("Correct!")
-        return True
-    else:
-        print(f"Answer '{user_answer}' is wrong answer ;(. ", end='')
-        print(f"Correct answer was '{correct_answer}'.")
-        print(f"Let's try again, {username}!")
-        return False
