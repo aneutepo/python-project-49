@@ -1,7 +1,17 @@
 import random
 from brain_games.get_username import get_username
 from math import gcd
-from brain_games.check_user_answer import check_user_answer
+
+
+def check_user_answer(correct_answer, user_answer, username):
+    if user_answer == str(correct_answer):
+        print("Correct!")
+        return True
+    else:
+        print(f"Answer '{user_answer}' is wrong answer ;(. ", end='')
+        print(f"Correct answer was '{correct_answer}'.")
+        print(f"Let's try again, {username}!")
+        return False
 
 
 def game_process():
