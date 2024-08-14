@@ -2,7 +2,7 @@ import random
 from brain_games.get_username import get_username
 
 
-def check_user_answer(correct_answer, user_answer, username):
+def write_answer_text(correct_answer, user_answer, username):
     if user_answer == str(correct_answer):
         print("Correct!")
         return True
@@ -19,7 +19,7 @@ def game_process():
     print("What number is missing in the progression?")
     while True:
         correct_answer, user_answer = create_question(10)
-        if check_user_answer(correct_answer, user_answer, username):
+        if write_answer_text(correct_answer, user_answer, username):
             score += 1
         else:
             break

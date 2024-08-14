@@ -3,7 +3,7 @@ from brain_games.get_username import get_username
 from math import gcd
 
 
-def check_user_answer(correct_answer, user_answer, username):
+def write_answer_text(correct_answer, user_answer, username):
     if user_answer == str(correct_answer):
         print("Correct!")
         return True
@@ -20,7 +20,7 @@ def game_process():
     print("Find the greatest common divisor of given numbers.")
     while True:
         user_answer, correct_answer = create_question()
-        if check_user_answer(correct_answer, user_answer, username):
+        if write_answer_text(correct_answer, user_answer, username):
             score += 1
         else:
             break
