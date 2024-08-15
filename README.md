@@ -20,7 +20,9 @@
 | brain-progression| What number is missing in the progression?. |
 | brain-prime | Answer "yes" if given number is prime. Otherwise answer "no". |
 
-
+# Asciinems of games
+### brain-even
+[![asciicast](https://asciinema.org/a/zHISRfkpyol5V3EB1xdHdt95N.svg)](https://asciinema.org/a/zHISRfkpyol5V3EB1xdHdt95N)
 ### brain-calc asciinema
 [![asciicast](https://asciinema.org/a/iQqNscIMhGrqBCQnfGiYUrU18.svg)](https://asciinema.org/a/iQqNscIMhGrqBCQnfGiYUrU18)
 ### brain-gcd asciinema
