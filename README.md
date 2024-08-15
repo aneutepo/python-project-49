@@ -3,12 +3,23 @@
 ### CodeClimate badge
 [![Maintainability](https://api.codeclimate.com/v1/badges/1c95d53c6537d22d4d37/maintainability)](https://codeclimate.com/github/aneutepo/python-project-49/maintainability)
 
-# Brain Games
-## This educational project includes 5 intellectual games implemented in the Python language
+## Brain Games
+### This educational project includes 5 intellectual games implemented in the Python language
+## Tools, used in this project 
 |      Tool     |   Descriptons |
 | ------------- | ------------- |
 | poetry        | Python dependency management and packaging made easy  |
 | flake8  | Your tool for style guide enforcement  |
+
+## Commands 
+|      Command     |   Descriptons |
+| ------------- | ------------- |
+| brain-even       | Answer "yes" if the number is even, otherwise answer "no". |
+| brain-cals  | What is the result of the expression?.  |
+| brain-gcd | Find the greatest common divisor of given numbers.|
+| brain-progression| What number is missing in the progression?. |
+| brain-prime | Answer "yes" if given number is prime. Otherwise answer "no". |
+
 
 ### brain-calc asciinema
 [![asciicast](https://asciinema.org/a/iQqNscIMhGrqBCQnfGiYUrU18.svg)](https://asciinema.org/a/iQqNscIMhGrqBCQnfGiYUrU18)
