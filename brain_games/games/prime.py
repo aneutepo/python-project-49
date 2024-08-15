@@ -9,11 +9,14 @@ def create_question():
     user_ans = input("Your answer: ")
     if question_number <= 1:
         correct_answer = "no"
-    if question_number == 2:
+    elif question_number == 2:
         correct_answer = "yes"
-    for i in range(2, question_number):
-        if question_number % i == 0:
-            correct_answer = "no"
+    else:
+        correct_answer = "yes"
+        for i in range(2, int(question_number ** 0.5) + 1):
+            if question_number % i == 0:
+                correct_answer = "no"
+                break
     return correct_answer, user_ans
 
 
