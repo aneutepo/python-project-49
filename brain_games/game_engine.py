@@ -1,13 +1,13 @@
 import prompt
 
 
-def game_process(generate_question_and_answer, game_title):
+def game_process(game_module):
     print("Welcome to the Brain Games!")
     username = prompt.string("May I have your name? ")
     print(f"Hello, {username}")
-    print(game_title)
+    print(game_module.GAME_TITLE)
     for _ in range(3):
-        correct_answer, user_answer = generate_question_and_answer()
+        correct_answer, user_answer = game_module.game_data()
         if user_answer == str(correct_answer):
             print("Correct!")
         else:

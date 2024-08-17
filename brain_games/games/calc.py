@@ -1,9 +1,8 @@
 import random
-from brain_games.game_engine import game_process
 GAME_TITLE = "What is the result of the expression?"
 
 
-def generate_game_data():
+def game_data():
     massive_of_signs = ['+', '-', '*']
     first_number = random.randint(1, 10)
     second_number = random.randint(1, 10)
@@ -18,7 +17,3 @@ def generate_game_data():
     else:
         correct_answer = first_number * second_number
     return correct_answer, user_answer
-
-
-def calc_game():
-    game_process(generate_game_data, GAME_TITLE)

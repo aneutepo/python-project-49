@@ -1,9 +1,8 @@
 import random
-from brain_games.game_engine import game_process
 GAME_TITLE = "What number is missing in the progression?"
 
 
-def create_question():
+def game_data():
     first_element = random.randint(1, 10)
     difference = random.randint(1, 10)
     masive_of_numbers = []
@@ -18,7 +17,3 @@ def create_question():
     print("Question:", masive_of_numbers)
     user_answer = input("Your answer: ")
     return correct_answer, user_answer
-
-
-def progression_game():
-    game_process(create_question, GAME_TITLE)

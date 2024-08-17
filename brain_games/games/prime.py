@@ -1,9 +1,8 @@
 import random
-from brain_games.game_engine import game_process
 GAME_TITLE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def create_question():
+def game_data():
     question_number = random.randint(1, 10)
     print(f"Question: {question_number}")
     user_ans = input("Your answer: ")
@@ -18,7 +17,3 @@ def create_question():
                 correct_answer = "no"
                 break
     return correct_answer, user_ans
-
-
-def prime_game():
-    game_process(create_question, GAME_TITLE)
