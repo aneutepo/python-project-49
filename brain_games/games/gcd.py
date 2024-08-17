@@ -3,7 +3,7 @@ import random
 GAME_TITLE = 'Find the greatest common divisor of given numbers.'
 
 
-def create_question():
+def game_data():
     first_number = random.randint(1, 10)
     second_number = random.randint(1, 10)
     print(f"Question: {first_number} {second_number}")
