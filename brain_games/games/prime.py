@@ -1,10 +1,10 @@
+import random
 from brain_games.game_engine import game_process
-from brain_games.generate_random_number import generate_random_number
 from brain_games.game_title import GAME_TITLES
 
 
 def create_question():
-    question_number = generate_random_number()
+    question_number = random.randint(1, 10)
     print(f"Question: {question_number}")
     user_ans = input("Your answer: ")
     if question_number <= 1:

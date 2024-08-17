@@ -1,12 +1,12 @@
 from math import gcd
-from brain_games.generate_random_number import generate_random_number
+import random
 from brain_games.game_title import GAME_TITLES
 from brain_games.game_engine import game_process
 
 
 def create_question():
-    first_number = generate_random_number()
-    second_number = generate_random_number()
+    first_number = random.randint(1, 10)
+    second_number = random.randint(1, 10)
     print(f"Question: {first_number} {second_number}")
     user_answer = input("Your answer: ")
     correct_answer = gcd(first_number, second_number)

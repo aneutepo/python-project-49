@@ -1,13 +1,12 @@
 import random
-from brain_games.generate_random_number import generate_random_number
 from brain_games.game_title import GAME_TITLES
 from brain_games.game_engine import game_process
 
 
 def generate_game_data():
     massive_of_signs = ['+', '-', '*']
-    first_number = generate_random_number()
-    second_number = generate_random_number()
+    first_number = random.randint(1, 10)
+    second_number = random.randint(1, 10)
     math_sign = random.choice(massive_of_signs)
     math_question = f"{str(first_number)} {math_sign} {str(second_number)}"
     print(f"Question: {math_question}")
