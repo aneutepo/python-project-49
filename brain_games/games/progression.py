@@ -1,6 +1,6 @@
 import random
 from brain_games.game_engine import game_process
-from brain_games.game_title import GAME_TITLES
+GAME_TITLE = "What number is missing in the progression?"
 
 
 def create_question():
@@ -21,4 +21,4 @@ def create_question():
 
 
 def progression_game():
-    game_process(create_question, GAME_TITLES['progression'])
+    game_process(create_question, GAME_TITLE)

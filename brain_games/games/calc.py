@@ -1,6 +1,6 @@
 import random
-from brain_games.game_title import GAME_TITLES
 from brain_games.game_engine import game_process
+GAME_TITLE = "What is the result of the expression?"
 
 
 def generate_game_data():
@@ -21,4 +21,4 @@ def generate_game_data():
 
 
 def calc_game():
-    game_process(generate_game_data, GAME_TITLES['calc'])
+    game_process(generate_game_data, GAME_TITLE)

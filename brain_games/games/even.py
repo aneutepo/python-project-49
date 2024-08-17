@@ -1,6 +1,6 @@
 import random
-from brain_games.game_title import GAME_TITLES
 from brain_games.game_engine import game_process
+GAME_TITLE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def create_question():
@@ -15,4 +15,4 @@ def create_question():
 
 
 def even_game():
-    game_process(create_question, GAME_TITLES['even'])
+    game_process(create_question, GAME_TITLE)

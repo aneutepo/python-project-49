@@ -1,7 +1,7 @@
 from math import gcd
 import random
-from brain_games.game_title import GAME_TITLES
 from brain_games.game_engine import game_process
+GAME_TITLE = 'Find the greatest common divisor of given numbers.'
 
 
 def create_question():
@@ -14,4 +14,4 @@ def create_question():
 
 
 def gcd_game():
-    game_process(create_question, GAME_TITLES['gcd'])
+    game_process(create_question, GAME_TITLE)

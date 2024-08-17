@@ -1,6 +1,6 @@
 import random
 from brain_games.game_engine import game_process
-from brain_games.game_title import GAME_TITLES
+GAME_TITLE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def create_question():
@@ -21,4 +21,4 @@ def create_question():
 
 
 def prime_game():
-    game_process(create_question, GAME_TITLES['prime'])
+    game_process(create_question, GAME_TITLE)
