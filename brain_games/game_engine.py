@@ -14,5 +14,5 @@ def game_process(generate_question_and_answer, game_title):
             print(f"Answer '{user_answer}' is wrong answer ;(. ", end='')
             print(f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {username}!")
-            break
+            return
         print(f'Congratulations, {username}!')
