@@ -2,13 +2,13 @@ import prompt
 MAX_ROUNDS = 3
 
 
-def game_process(game_module):
+def game_process(game):
     print("Welcome to the Brain Games!")
     username = prompt.string("May I have your name? ")
     print(f"Hello, {username}")
-    print(game_module.GAME_TITLE)
+    print(game.GAME_TITLE)
     for _ in range(MAX_ROUNDS):
-        correct_answer, question = game_module.game_data()
+        correct_answer, question = game.game_data()
         print(f"Question: {question}")
         user_answer = input("Your answer: ")
         if user_answer == str(correct_answer):
