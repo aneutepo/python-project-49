@@ -17,5 +17,6 @@ def game_process(game_module):
             print(f"Answer '{user_answer}' is wrong answer ;(. ", end='')
             print(f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {username}!")
-            return
-    print(f'Congratulations, {username}!')
+            break
+    else:
+        print(f'Congratulations, {username}!')
