@@ -4,8 +4,6 @@ GAME_TITLE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def game_data():
     question_number = random.randint(1, 10)
-    print(f"Question: {question_number}")
-    user_ans = input("Your answer: ")
     if question_number <= 1:
         correct_answer = "no"
     elif question_number == 2:
@@ -16,4 +14,4 @@ def game_data():
             if question_number % i == 0:
                 correct_answer = "no"
                 break
-    return correct_answer, user_ans
+    return correct_answer, question_number

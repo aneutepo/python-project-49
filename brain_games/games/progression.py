@@ -14,6 +14,4 @@ def game_data():
     correct_answer = masive_of_numbers[number_of_hide_elem]
     masive_of_numbers[number_of_hide_elem] = '..'
     masive_of_numbers = ' '.join(map(str, masive_of_numbers))
-    print("Question:", masive_of_numbers)
-    user_answer = input("Your answer: ")
-    return correct_answer, user_answer
+    return correct_answer, masive_of_numbers
