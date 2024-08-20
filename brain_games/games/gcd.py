@@ -1,6 +1,6 @@
 from math import gcd
 import random
-GAME_TITLE = 'Find the greatest common divisor of given numbers.'
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
 def game_data():

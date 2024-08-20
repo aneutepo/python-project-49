@@ -1,5 +1,5 @@
 import random
-GAME_TITLE = "What is the result of the expression?"
+RULES = "What is the result of the expression?"
 
 
 def game_data():
