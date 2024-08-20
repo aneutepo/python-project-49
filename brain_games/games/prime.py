@@ -18,4 +18,4 @@ def is_prime(number):
 def game_data():
     question_number = random.randint(1, 10)
     correct_answer = 'yes' if is_prime(question_number) else 'no'
-    return question_number, correct_answer
+    return correct_answer, question_number
