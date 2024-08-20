@@ -9,7 +9,7 @@ def is_prime(number):
         return True
     if number % 2 == 0:
         return False
-    for i in range(2, int(number**0.5) + 1, 2):
+    for i in range(3, int(number**0.5) + 1, 2):
         if number % i == 0:
             return False
     return True
@@ -17,8 +17,5 @@ def is_prime(number):
 
 def game_data():
     question_number = random.randint(1, 10)
-    if is_prime(question_number):
-        correct_answer = 'yes'
-    else:
-        correct_answer = 'no'
-    return correct_answer, question_number
+    correct_answer = 'yes' if is_prime(question_number) else 'no'
+    return question_number, correct_answer
