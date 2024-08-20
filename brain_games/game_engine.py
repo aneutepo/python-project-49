@@ -6,7 +6,7 @@ def game_process(game):
     print("Welcome to the Brain Games!")
     username = prompt.string("May I have your name? ")
     print(f"Hello, {username}")
-    print(game.GAME_TITLE)
+    print(game.RULES)
     for _ in range(MAX_ROUNDS):
         correct_answer, question = game.game_data()
         print(f"Question: {question}")
